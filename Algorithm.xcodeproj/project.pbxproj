@@ -6,10 +6,6 @@
 	objectVersion = 56;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		07C818E32BB07E060085BB83 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C818E22BB07E060085BB83 /* main.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		07C818DD2BB07E060085BB83 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -25,6 +21,10 @@
 /* Begin PBXFileReference section */
 		07C818DF2BB07E060085BB83 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C818E22BB07E060085BB83 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		07C818EB2BB07E9C0085BB83 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		07C818EC2BB07E9C0085BB83 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		07C818ED2BB07E9C0085BB83 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		07C818EE2BB07E9C0085BB83 /* linkedlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = linkedlist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +38,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07363C7B2BB0804600B3F7B0 /* [BOJ_2588] 곱셈 */ = {
+			isa = PBXGroup;
+			children = (
+				07C818EB2BB07E9C0085BB83 /* main.swift */,
+			);
+			name = "[BOJ_2588] 곱셈";
+			path = "[BOJ_2588] 곱셈";
+			sourceTree = "<group>";
+		};
+		07363C7C2BB0807500B3F7B0 /* [BOJ_10430] 나머지 */ = {
+			isa = PBXGroup;
+			children = (
+				07C818EC2BB07E9C0085BB83 /* main.swift */,
+			);
+			name = "[BOJ_10430] 나머지";
+			path = "[BOJ_10430] 나머지";
+			sourceTree = "<group>";
+		};
+		07363C7E2BB080C400B3F7B0 /* [BOJ_18108] 연도변환 */ = {
+			isa = PBXGroup;
+			children = (
+				07C818ED2BB07E9C0085BB83 /* main.swift */,
+			);
+			name = "[BOJ_18108] 연도변환";
+			path = "[BOJ_18108] 연도변환";
+			sourceTree = "<group>";
+		};
+		077CB7032BB0826500907415 /* [BOJ_11382] 꼬마 정민 */ = {
+			isa = PBXGroup;
+			children = (
+				07C818E22BB07E060085BB83 /* main.swift */,
+			);
+			name = "[BOJ_11382] 꼬마 정민";
+			path = "[BOJ_11382] 꼬마 정민";
+			sourceTree = "<group>";
+		};
 		07C818D62BB07E060085BB83 = {
 			isa = PBXGroup;
 			children = (
@@ -57,9 +93,21 @@
 		07C818E12BB07E060085BB83 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
-				07C818E22BB07E060085BB83 /* main.swift */,
+				07C818F62BB080170085BB83 /* BaekJoon */,
+				07C818EE2BB07E9C0085BB83 /* linkedlist.swift */,
 			);
 			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		07C818F62BB080170085BB83 /* BaekJoon */ = {
+			isa = PBXGroup;
+			children = (
+				077CB7032BB0826500907415 /* [BOJ_11382] 꼬마 정민 */,
+				07363C7E2BB080C400B3F7B0 /* [BOJ_18108] 연도변환 */,
+				07363C7C2BB0807500B3F7B0 /* [BOJ_10430] 나머지 */,
+				07363C7B2BB0804600B3F7B0 /* [BOJ_2588] 곱셈 */,
+			);
+			path = BaekJoon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +168,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07C818E32BB07E060085BB83 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
