@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		073284DA2BB4696600ADE8E3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073284D92BB4696600ADE8E3 /* main.swift */; };
+		07883C5F2BB6FB7000AE760C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07883C5E2BB6FB7000AE760C /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +26,7 @@
 		073284D32BB4628700ADE8E3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		073284D62BB467E500ADE8E3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		073284D92BB4696600ADE8E3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		07883C5E2BB6FB7000AE760C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		07C818DF2BB07E060085BB83 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C818E22BB07E060085BB83 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		07C818EB2BB07E9C0085BB83 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -108,6 +109,15 @@
 			path = "[BOJ_11382] 꼬마 정민";
 			sourceTree = "<group>";
 		};
+		07883C5D2BB6FB5900AE760C /* [BOJ_14681] 사분면 고르기 */ = {
+			isa = PBXGroup;
+			children = (
+				07883C5E2BB6FB7000AE760C /* main.swift */,
+			);
+			name = "[BOJ_14681] 사분면 고르기";
+			path = "[BOJ_14681] 사분면 고르기";
+			sourceTree = "<group>";
+		};
 		07C818D62BB07E060085BB83 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +146,7 @@
 		07C818F62BB080170085BB83 /* BaekJoon */ = {
 			isa = PBXGroup;
 			children = (
+				07883C5D2BB6FB5900AE760C /* [BOJ_14681] 사분면 고르기 */,
 				073284D82BB4694800ADE8E3 /* [BOJ_2753] 윤년 */,
 				073284D52BB467C500ADE8E3 /* [BOJ_9498] 시험 성적 */,
 				073284D22BB4622C00ADE8E3 /* [BOJ_1330] 두 수 비교하기 */,
@@ -206,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				073284DA2BB4696600ADE8E3 /* main.swift in Sources */,
+				07883C5F2BB6FB7000AE760C /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
