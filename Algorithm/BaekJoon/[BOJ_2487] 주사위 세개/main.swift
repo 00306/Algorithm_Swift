@@ -23,7 +23,7 @@ if numbers_dictionary.count == 1 {
     reward += 10000 + numbers_dictionary.first!.key * 1000
 } else if numbers_dictionary.count == 2 {
     let number = numbers_dictionary.filter { $0.value == 2 }
-    reward += 1000 + number.first!.value * 100
+    reward += 1000 + number.first!.key * 100
 } else if numbers_dictionary.count == 3 {
     let number = numbers_dictionary.max(by: { $0.key < $1.key })
     reward += number!.key * 100

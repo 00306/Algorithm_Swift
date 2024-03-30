@@ -102,12 +102,12 @@
 			path = "[BOJ_18108] 연도변환";
 			sourceTree = "<group>";
 		};
-		07615B5B2BB85AF2007659B1 /* [BOJ_2487] 주사위 세개 */ = {
+		07615B5B2BB85AF2007659B1 /* [BOJ_2480] 주사위 세개 */ = {
 			isa = PBXGroup;
 			children = (
 				07615B5C2BB85B03007659B1 /* main.swift */,
 			);
-			name = "[BOJ_2487] 주사위 세개";
+			name = "[BOJ_2480] 주사위 세개";
 			path = "[BOJ_2487] 주사위 세개";
 			sourceTree = "<group>";
 		};
@@ -166,7 +166,7 @@
 		07C818F62BB080170085BB83 /* BaekJoon */ = {
 			isa = PBXGroup;
 			children = (
-				07615B5B2BB85AF2007659B1 /* [BOJ_2487] 주사위 세개 */,
+				07615B5B2BB85AF2007659B1 /* [BOJ_2480] 주사위 세개 */,
 				07883C602BB6FF5C00AE760C /* [BOJ_2884] 알람 시계 */,
 				07883C5D2BB6FB5900AE760C /* [BOJ_14681] 사분면 고르기 */,
 				073284D82BB4694800ADE8E3 /* [BOJ_2753] 윤년 */,
