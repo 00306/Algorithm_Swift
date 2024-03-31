@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07615B5D2BB85B03007659B1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07615B5C2BB85B03007659B1 /* main.swift */; };
+		07A262542BB9B935004A2844 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A262532BB9B935004A2844 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +29,7 @@
 		07615B5C2BB85B03007659B1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		07883C5E2BB6FB7000AE760C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		07883C612BB6FFD900AE760C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		07A262532BB9B935004A2844 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		07C818DF2BB07E060085BB83 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C818E22BB07E060085BB83 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		07C818EB2BB07E9C0085BB83 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -138,6 +139,15 @@
 			path = "[BOJ_2884] 알람 시계";
 			sourceTree = "<group>";
 		};
+		07A262522BB9B922004A2844 /* [BOJ_2525] 오븐 시계 */ = {
+			isa = PBXGroup;
+			children = (
+				07A262532BB9B935004A2844 /* main.swift */,
+			);
+			name = "[BOJ_2525] 오븐 시계";
+			path = "[BOJ_2525] 오븐 시계";
+			sourceTree = "<group>";
+		};
 		07C818D62BB07E060085BB83 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +176,7 @@
 		07C818F62BB080170085BB83 /* BaekJoon */ = {
 			isa = PBXGroup;
 			children = (
+				07A262522BB9B922004A2844 /* [BOJ_2525] 오븐 시계 */,
 				07615B5B2BB85AF2007659B1 /* [BOJ_2480] 주사위 세개 */,
 				07883C602BB6FF5C00AE760C /* [BOJ_2884] 알람 시계 */,
 				07883C5D2BB6FB5900AE760C /* [BOJ_14681] 사분면 고르기 */,
@@ -239,7 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07615B5D2BB85B03007659B1 /* main.swift in Sources */,
+				07A262542BB9B935004A2844 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
