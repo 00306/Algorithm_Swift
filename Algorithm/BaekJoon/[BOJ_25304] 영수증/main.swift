@@ -10,11 +10,9 @@ let numbersOfStuff = Int(readLine()!)!
 var sumOfStuff = 0
 
 for _ in 1...numbersOfStuff {
-    let stuff = readLine()!.split(separator: " ").map { Int($0)! }
-    let price = stuff[0]
-    let count = stuff[1]
+    let stuff = readLine()!.split(separator: " ").map { Int($0)! }.reduce(1, *)
     
-    sumOfStuff += price*count
+    sumOfStuff += stuff
 }
 
 print(result == sumOfStuff ? "Yes" : "No")
