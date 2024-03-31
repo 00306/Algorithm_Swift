@@ -6,21 +6,11 @@
 //
 
 let currentTime = readLine()!.split(separator: " ").map { Int($0)! }
-var hour: Int = currentTime[0]
-var minute: Int = currentTime[1]
-
 let duration = Int(readLine()!)!
+var hour: Int = currentTime[0]
+var minute: Int = currentTime[1] + duration
 
-    hour += duration / 60
-    minute += duration % 60
-    
-    if minute > 59 {
-        hour += minute / 60
-        minute = minute % 60
-    }
-    
-    if hour > 23 {
-        hour = hour - 24
-    }
+hour = (hour + minute / 60) % 24
+minute = minute % 60
 
 print(hour, minute)
