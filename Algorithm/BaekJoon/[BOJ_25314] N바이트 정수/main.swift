@@ -7,8 +7,4 @@
 
 let n = Int(readLine()!)!
 
-for _ in 1...(n/4) {
-    print("long", terminator: " ")
-}
-
-print("int")
+print(String(repeating: "long ", count: n/4) + "int")
