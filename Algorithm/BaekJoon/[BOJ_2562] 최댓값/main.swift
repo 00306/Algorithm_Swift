@@ -5,12 +5,16 @@
 //  Created by 송지혁 on 4/5/24.
 //
 
-var num_arr: [Int] = []
+var max = 0
+var index = 0
 
-for _ in 0..<9 {
-    num_arr.append(Int(readLine()!)!)
+for i in 1...9 {
+    let input = Int(readLine()!)!
+    
+    if input > max {
+        max = input
+        index = i
+    }
 }
 
-let max_num = num_arr.max()!
-let index = num_arr.firstIndex(of: max_num)!
-print("\(max_num)\n\(index+1)")
+print("\(max)\n\(index)")
