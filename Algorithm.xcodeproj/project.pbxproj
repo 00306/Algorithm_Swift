@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0765854F2BC007AB003324E3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0765854E2BC007AB003324E3 /* main.swift */; };
+		071247342BC019CE00271082 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071247332BC019CE00271082 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		071247332BC019CE00271082 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		072518DA2BBD9A990037E1D3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		073284D32BB4628700ADE8E3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		073284D62BB467E500ADE8E3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -65,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071247322BC019BD00271082 /* [BOJ_1546] 평균 */ = {
+			isa = PBXGroup;
+			children = (
+				071247332BC019CE00271082 /* main.swift */,
+			);
+			name = "[BOJ_1546] 평균";
+			path = "[BOJ_1546] 평균";
+			sourceTree = "<group>";
+		};
 		072518D92BBD9A850037E1D3 /* [BOJ_10871] X보다 작은 수 */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +282,7 @@
 		07C818F62BB080170085BB83 /* BaekJoon */ = {
 			isa = PBXGroup;
 			children = (
+				071247322BC019BD00271082 /* [BOJ_1546] 평균 */,
 				0765854D2BC00796003324E3 /* [BOJ_10813] 공 바꾸기 */,
 				0765854A2BBFF718003324E3 /* [BOJ_10810] 공 넣기 */,
 				076585472BBF1277003324E3 /* [BOJ_2562] 최댓값 */,
@@ -422,7 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0765854F2BC007AB003324E3 /* main.swift in Sources */,
+				071247342BC019CE00271082 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
