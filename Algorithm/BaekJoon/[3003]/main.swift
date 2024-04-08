@@ -6,11 +6,11 @@
 //
 
 let input = readLine()!.split(separator: " ").map { Int($0)! }
-let pieces = [1, 1, 2, 2, 2, 8]
-var answer = ""
+var pieces = [1, 1, 2, 2, 2, 8]
+var answer: [String] = Array(repeating: "", count: 6)
 
 for i in 0..<pieces.count {
-    answer += "\(String(pieces[i]-input[i])) "
+    answer[i] = String(pieces[i]-input[i])
 }
 
-print(answer)
+print(answer.joined(separator: " "))
