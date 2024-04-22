@@ -5,23 +5,18 @@
 //  Created by 송지혁 on 4/22/24.
 //
 
-let n = Int(readLine()!)!
-var answer = Int.max
+var n = Int(readLine()!)!
+var answer = 0
 
-for i in 0...n/5 {
-    let x = n/5 - i
-    let y = (n - 5*x)/3
-    
-    if 5*x+3*y == n {
-        answer = min(answer, x+y)
+while n > 2 {
+    if n % 5 == 0 {
+        n -= 5
+    } else {
+        n -= 3
     }
+    
+    answer += 1
+    
 }
 
-if answer == Int.max {
-    answer = -1
-}
-
-print(answer)
-
-
-//3 5
+print(n == 0 ? answer : -1)
