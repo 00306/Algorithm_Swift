@@ -20,6 +20,3 @@ for i in 0..<s.count {
 }
 
 print(str_set.count)
-
-
-// brute force로 하면 시간초과
