@@ -6,27 +6,16 @@
 //
 
 let t = Int(readLine()!)!
-var result = ""
 
-
-for _ in 0..<t {
-    let input = readLine()!.split(separator: " ").map { Int($0)! }
-    var westSpotCount = input[0]
-    let eastSpotCount = input[1]
+(0..<t).forEach { _ in
+    let input = readLine()!.split(separator: " ").map { Int($0)! }, n = input[0], m = input[1]
     
-    if westSpotCount > eastSpotCount / 2 {
-        westSpotCount = eastSpotCount - westSpotCount
+    var result = 1
+    for i in 0..<m-n {
+        result = result * (m-i) / (i+1)
+        // result *= (m-i) / (i+1)
     }
     
-    var numerator = 1
-    var denominator = 1
+    print(result)
     
-    for i in 0..<westSpotCount {
-        numerator *= eastSpotCount - i
-        denominator *= i+1
-    }
-    
-    result += "\(numerator / denominator)\n"
 }
-
-print(result)
