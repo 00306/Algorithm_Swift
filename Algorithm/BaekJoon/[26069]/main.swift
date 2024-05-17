@@ -6,29 +6,14 @@
 //
 
 let n = Int(readLine()!)!
-var dictionary: [String:Bool] = [:]
-
+var peopleSet: Set<String> = ["ChongChong"]
 
 for _ in 0..<n {
     let input = readLine()!.split(separator: " ").map { String($0) }
-    let firstPerson = input[0]
-    let secondPerson = input[1]
-    if firstPerson == "ChongChong" || secondPerson == "ChongChong" {
-       dictionary[firstPerson] = true
-       dictionary[secondPerson] = true
+    if peopleSet.contains(input[0]) || peopleSet.contains(input[1]) {
+        peopleSet.insert(input[0])
+        peopleSet.insert(input[1])
     }
-    
-    if dictionary[firstPerson] != nil || dictionary[secondPerson] != nil {
-        if dictionary[firstPerson] == true || dictionary[secondPerson] == true {
-            dictionary[firstPerson] = true
-            dictionary[secondPerson] = true
-        } else {
-            dictionary[firstPerson] = false
-            dictionary[secondPerson] = false
-        }
-    }
-    
-    
 }
 
-print(dictionary.filter { $0.value }.count)
+print(peopleSet.count)
