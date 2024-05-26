@@ -6,95 +6,41 @@
 //
 
 let n = Int(readLine()!)!
-var board = Array(repeating: Array(repeating: false, count: n+1), count: n+1)
-var index = 1
+
+var board = Array(repeating: 0, count: n)
+var visited = Array(repeating: false, count: n)
 var result = 0
 
-for i in 1...n {
-    for j in 1...n {
-        board = Array(repeating: Array(repeating: false, count: n+1), count: n+1)
-        dfs(0, x: j, y: i)
-    }
-}
+dfs(x: 0)
+print(result)
 
-
-func dfs(_ count: Int, x: Int, y: Int) {
-    if count == n {
+func dfs(x: Int) {
+    if x == n {
         result += 1
     }
     
-    if !board[y][x] {
-//        print(y, x)
-        let newCount = count + 1
-        queenMove(state: true, y: y, x: x)
-//        board.forEach { print($0) }
-//        print(newCount)
-//        print("\n")
+    for i in 0..<n {
+        if visited[i] { continue }
+        board[x] = i
         
-        for i in 1...n {
-            for j in 1...n {
-                dfs(newCount, x: j, y: i)
-                
-            }
+        if check(x: x) {
+            visited[i] = true
+            dfs(x: x+1)
+            visited[i] = false
         }
     }
 }
 
-func queenMove(state: Bool, y: Int, x: Int) {
-    // Queen Horizontal Move
-    board[y] = Array(repeating: state, count: n+1)
-    
-    // Queen Vertical Move
-    for i in 1...n {
-        board[i][x] = state
-    }
-    
-    // Queen Directional Move
-    // Top Left Directional Move
-    while true {
-        if x - index == 0 || y - index == 0 {
-            index = 1
-            break
+func check(x: Int) -> Bool {
+    for i in 0..<x {
+        if board[x] == board[i] {
+           return false
         }
         
-        board[y - index][x - index] = state
-        index += 1
-    }
-    
-    // Top Right Directional Move
-    while true {
-        if x + index == n + 1 || y - index == 0 {
-            index = 1
-            break
+        if abs(i - x) == abs(board[i] - board[x]) {
+            return false
         }
-        
-        board[y - index][x + index] = state
-        index += 1
     }
     
-    
-    // Bottom Left Directional Move
-    while true {
-        if x - index == 0 || y + index == n+1 {
-            index = 1
-            break
-        }
-        
-        board[y + index][x - index] = state
-        index += 1
-    }
-    
-    // Bottom Right Directional Move
-    while true {
-        if x + index == n+1 || y + index == n+1 {
-            index = 1
-            break
-        }
-        
-        board[y + index][x + index] = state
-        index += 1
-    }
+    return true
 }
-
-print(result)
-
