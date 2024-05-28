@@ -8,64 +8,75 @@
 import Foundation
 
 var board: [[Int]] = []
+var emptyCoordinate: [(Int, Int)] = []
 var result = ""
 
-for _ in 0..<9 {
+for i in 0..<9 {
     let input = readLine()!.split(separator: " ").map { Int($0)! }
     board.append(input)
 }
 
-dfs(0, 0)
+for i in 0..<9 {
+    for j in 0..<9 {
+        if board[i][j] == 0 {
+            emptyCoordinate.append((i, j))
+        }
+    }
+}
 
-func dfs(_ x: Int, _ y: Int) {
-    if y == 9 {
+dfs(0)
+
+func isValidRow(num: Int, x: Int) -> Bool {
+    for i in 0..<9 {
+        if board[i][x] == num {
+            return false
+        }
+    }
+    
+    return true
+}
+
+func isValidColumn(num: Int, y: Int) -> Bool {
+    for i in 0..<9 {
+        if board[y][i] == num {
+            return false
+        }
+    }
+    
+    return true
+}
+
+func isValidRect(x: Int, y: Int, num: Int) -> Bool {
+    let startX = x / 3 * 3
+    let startY = y / 3 * 3
+    
+    for i in 0..<3 {
+        for j in 0..<3 {
+            if board[startY + i][startX + j] == num {
+                return false
+            }
+        }
+    }
+    
+    
+    return true
+}
+
+func dfs(_ count: Int) {
+    if count == emptyCoordinate.count {
         board.forEach { result += "\($0.map { String($0) }.joined(separator: " "))\n" }
         print(result)
         exit(0)
     }
     
-    for newX in x..<9 where board[y][newX] == 0 {
-        for num in findNums(i: y, j: newX) {
-            board[y][newX] = num
-            dfs(newX+1, y)
-            board[y][newX] = 0
-        }
-        return
-    }
-
-    dfs(0, y+1)
-}
-
-
-func findNums(i: Int, j: Int) -> [Int] {
-    var existNumbers: Set<Int> = []
+    let x = emptyCoordinate[count].1
+    let y = emptyCoordinate[count].0
     
-    // horizontal Check
-    // Vertical Check
-    for index in 0..<9 {
-        existNumbers.insert(board[i][index])
-        existNumbers.insert(board[index][j])
-    }
-    
-    // Square Check
-    let squareXIndex = j - (j % 3)
-    let squareYIndex = i - (i % 3)
-    
-    for squareY in squareYIndex..<squareYIndex+3 {
-        for squareX in squareXIndex..<squareXIndex+3 {
-            existNumbers.insert(board[squareY][squareX])
+    for num in 1...9 {
+        if isValidRow(num: num, x: x), isValidColumn(num: num, y: y), isValidRect(x: x, y: y, num: num) {
+            board[y][x] = num
+            dfs(count + 1)
+            board[y][x] = 0
         }
     }
-    
-    return [1, 2, 3, 4, 5, 6, 7, 8, 9].filter { !existNumbers.contains($0) }
 }
-
-//0 0 0 0 0 0 0 0 0
-//0 0 0 0 0 0 0 0 0
-//0 0 0 0 0 0 0 0 0
-//0 0 0 0 0 0 0 0 0
-//0 0 0 0 0 0 0 0 0
-//0 0 0 0 0 0 0 0 0
-//0 0 0 0 0 0 0 0 0
-//0 0 0 0 0 0 0 0 0
-//0 0 0 0 0 0 0 0 0
