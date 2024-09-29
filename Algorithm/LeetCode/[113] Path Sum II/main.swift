@@ -52,3 +52,37 @@ class Solution {
         return left + right
     }
 }
+
+let array = readLine()!.split(separator: " ").map { Int($0) }
+
+func buildTree(from: [Int?]) -> TreeNode? {
+    guard !array.isEmpty, let rootValue = array[0] else { return nil }
+    
+    let root = TreeNode(rootValue)
+    var queue: [TreeNode] = [root]
+    var i = 1
+    
+    while i < array.count {
+        let currentNode = queue.removeFirst()
+        
+        if let left = array[i] {
+            let leftNode = TreeNode(left)
+            currentNode.left = leftNode
+            
+            queue.append(leftNode)
+        }
+        i += 1
+        
+        if let right = array[i] {
+            let rightNode = TreeNode(right)
+            currentNode.right = rightNode
+            
+            queue.append(rightNode)
+        }
+        i += 1
+    }
+    
+    return root
+}
+
+
