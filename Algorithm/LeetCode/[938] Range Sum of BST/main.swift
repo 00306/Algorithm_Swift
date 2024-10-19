@@ -21,12 +21,16 @@ public class TreeNode {
 class Solution {
     func rangeSumBST(_ root: TreeNode?, _ low: Int, _ high: Int) -> Int {
         guard let root else { return 0 }
-        let range = low...high
+        if root.val >= low && root.val <= high {
+            return root.val +
+            rangeSumBST(root.left, low, high) +
+            rangeSumBST(root.right, low, high)
+        } else if root.val < low {
+            return rangeSumBST(root.right, low, high)
+        } else if root.val > high {
+            return rangeSumBST(root.left, low, high)
+        }
         
-        let leftSum = rangeSumBST(root.left, low, high)
-        let rightSum = rangeSumBST(root.right, low, high)
-        let currentValue = range ~= root.val ? root.val : 0
-        
-        return leftSum + rightSum + currentValue
+        return 0
     }
 }
