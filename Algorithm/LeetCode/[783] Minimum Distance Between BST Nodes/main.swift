@@ -21,30 +21,18 @@ public class TreeNode {
 class Solution {
     func minDiffInBST(_ root: TreeNode?) -> Int {
         guard let root else { return Int.max }
+        var nums: [Int] = inorderTraversal(root)
         
-        let leftValue = goToRight(root.left)
-        let rightValue = goToLeft(root.right)
+        var result = Int.max
+        for i in 1..<nums.count {
+            result = min(result, nums[i] - nums[i-1])
+        }
         
-        let leftsubTreeMinValue = minDiffInBST(root.left)
-        let rightsubTreeMinValue = minDiffInBST(root.right)
-        
-        return min(leftsubTreeMinValue,
-                   rightsubTreeMinValue,
-                   abs(root.val - leftValue),
-                   abs(root.val - rightValue))
+        return result
     }
     
-    func goToRight(_ root: TreeNode?) -> Int {
-        if root == nil { return Int.max }
-        if let root, root.right == nil { return root.val }
-        
-        return goToRight(root?.right)
-    }
-    
-    func goToLeft(_ root: TreeNode?) -> Int {
-        if root == nil { return Int.max }
-        if let root, root.left == nil { return root.val }
-        
-        return goToLeft(root?.left)
+    func inorderTraversal(_ root: TreeNode?) -> [Int] {
+        guard let root else { return [] }
+        return inorderTraversal(root.left) + [root.val] + inorderTraversal(root.right)
     }
 }
