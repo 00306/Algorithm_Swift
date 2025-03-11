@@ -244,11 +244,22 @@
 		07F6D6AA2C255C7B0036D2E1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		071B9A8F2D8037F6004904E7 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.swift,
+			);
+			target = 07C818DE2BB07E060085BB83 /* Algorithm */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		070A083D2CD2EB6900A951B2 /* [1927] */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[1927]"; sourceTree = "<group>"; };
 		070A08412CD2F52400A951B2 /* [11286] */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[11286]"; sourceTree = "<group>"; };
 		0713EF052CA2FF8B0044BB6B /* [11444] */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[11444]"; sourceTree = "<group>"; };
 		0713EF092CA32CA40044BB6B /* [125] Valid Palindrome */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[125] Valid Palindrome"; sourceTree = "<group>"; };
+		071B9A8C2D8037EF004904E7 /* [16928] */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (071B9A8F2D8037F6004904E7 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "[16928]"; sourceTree = "<group>"; };
 		072ADDC62D0816DB0034EE17 /* [104] Maximum Depth of Binary Tree */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[104] Maximum Depth of Binary Tree"; sourceTree = "<group>"; };
 		072ADDCA2D0825E10034EE17 /* [105] Construct Binary Tree from Preorder and Inorder Traversal */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[105] Construct Binary Tree from Preorder and Inorder Traversal"; sourceTree = "<group>"; };
 		072ADDCF2D0827490034EE17 /* [5639] */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[5639]"; sourceTree = "<group>"; };
@@ -2066,6 +2077,7 @@
 		07C818F62BB080170085BB83 /* BaekJoon */ = {
 			isa = PBXGroup;
 			children = (
+				071B9A8C2D8037EF004904E7 /* [16928] */,
 				072ADE2D2D10D1180034EE17 /* [1753] */,
 				072ADE292D10C2BA0034EE17 /* [1922] */,
 				072ADE252D10AD740034EE17 /* [6497] */,
@@ -2512,7 +2524,7 @@
 				TargetAttributes = {
 					07C818DE2BB07E060085BB83 = {
 						CreatedOnToolsVersion = 15.3;
-						LastSwiftMigration = 1600;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
