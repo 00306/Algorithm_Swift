@@ -245,7 +245,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		07874BAF2D8288B7001D8872 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		07D0BC2F2D85E96E00FBAB4A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				main.swift,
@@ -326,8 +326,9 @@
 		0782D11F2CC6985400ACD63B /* [205] Isomorphic Strings */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[205] Isomorphic Strings"; sourceTree = "<group>"; };
 		0782D1232CC69B2600ACD63B /* [242] Valid Anagram */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[242] Valid Anagram"; sourceTree = "<group>"; };
 		0782D1272CC69F2A00ACD63B /* [290] Word Pattern */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[290] Word Pattern"; sourceTree = "<group>"; };
-		07874BAC2D8288AD001D8872 /* [1074] */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (07874BAF2D8288B7001D8872 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "[1074]"; sourceTree = "<group>"; };
+		07874BAC2D8288AD001D8872 /* [1074] */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[1074]"; sourceTree = "<group>"; };
 		079402E62CA34414006A309F /* [209] Minimum Size Subarray Sum */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[209] Minimum Size Subarray Sum"; sourceTree = "<group>"; };
+		07D0BC2C2D85E96000FBAB4A /* [2448] */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (07D0BC2F2D85E96E00FBAB4A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "[2448]"; sourceTree = "<group>"; };
 		07DC00352CAA421B003E99FA /* [1920] */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[1920]"; sourceTree = "<group>"; };
 		07DC00392CAA5AA6003E99FA /* [1654] */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[1654]"; sourceTree = "<group>"; };
 		07DC00502CAA6DD6003E99FA /* [724] Find Pivot Index */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[724] Find Pivot Index"; sourceTree = "<group>"; };
@@ -2078,6 +2079,7 @@
 		07C818F62BB080170085BB83 /* BaekJoon */ = {
 			isa = PBXGroup;
 			children = (
+				07D0BC2C2D85E96000FBAB4A /* [2448] */,
 				07874BAC2D8288AD001D8872 /* [1074] */,
 				071B9A8C2D8037EF004904E7 /* [16928] */,
 				072ADE2D2D10D1180034EE17 /* [1753] */,
