@@ -35,7 +35,7 @@
 		07CF1B832D9A48580098B51B /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"Tier 5/1041.swift",
+				"Tier 5/1052.swift",
 			);
 			target = 07C818DE2BB07E060085BB83 /* Algorithm */;
 		};
