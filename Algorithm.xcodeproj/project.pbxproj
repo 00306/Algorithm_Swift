@@ -31,10 +31,20 @@
 		07C818DF2BB07E060085BB83 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		071A54212DD1E16E0031F2A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Tier 3/4179.swift",
+			);
+			target = 07C818DE2BB07E060085BB83 /* Algorithm */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		07094C6F2D895357002D04AA /* Bronze */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Bronze; sourceTree = "<group>"; };
 		07094C702D89535B002D04AA /* Silver */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Silver; sourceTree = "<group>"; };
-		07094C712D895360002D04AA /* Gold */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Gold; sourceTree = "<group>"; };
+		07094C712D895360002D04AA /* Gold */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (071A54212DD1E16E0031F2A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Gold; sourceTree = "<group>"; };
 		0713EF092CA32CA40044BB6B /* [125] Valid Palindrome */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[125] Valid Palindrome"; sourceTree = "<group>"; };
 		072ADDC62D0816DB0034EE17 /* [104] Maximum Depth of Binary Tree */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[104] Maximum Depth of Binary Tree"; sourceTree = "<group>"; };
 		072ADDCA2D0825E10034EE17 /* [105] Construct Binary Tree from Preorder and Inorder Traversal */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "[105] Construct Binary Tree from Preorder and Inorder Traversal"; sourceTree = "<group>"; };
