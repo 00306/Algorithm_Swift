@@ -295,7 +295,7 @@
 				TargetAttributes = {
 					07C818DE2BB07E060085BB83 = {
 						CreatedOnToolsVersion = 15.3;
-						LastSwiftMigration = 1640;
+						LastSwiftMigration = 2610;
 					};
 				};
 			};
@@ -453,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VGKCD7Q8NW;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -466,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VGKCD7Q8NW;
 				ENABLE_HARDENED_RUNTIME = YES;
